@@ -1,0 +1,24 @@
+{
+  "name": "svg-logo-generator-uofw",
+  "version": "1.0.0",
+  "description": "a simple command line logo generator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LShankKirchner017/svg-logo-generator-UofW.git"
+  },
+  "author": "Lindsay Shank-Kirchner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LShankKirchner017/svg-logo-generator-UofW/issues"
+  },
+  "homepage": "https://github.com/LShankKirchner017/svg-logo-generator-UofW#readme",
+  "dependencies": {
+    "inquirer": "^9.2.10",
+    "jest": "^29.6.2"
+  }
+}
