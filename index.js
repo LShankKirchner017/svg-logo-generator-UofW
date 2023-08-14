@@ -10,7 +10,7 @@ function init(){
     .then((answers => {
         const logo = generateLogo(answers)
         console.log("Logo created successfully!")
-        return writeFile("./examples/newLogo.svg", logo)
+        return writeFile("newLogo.svg", logo)
     }))
     .catch((error => {
         console.log("Error occurred")
