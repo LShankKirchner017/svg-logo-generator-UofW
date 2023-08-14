@@ -1,25 +1,19 @@
-import fs from "fs"
+import { writeFile } from "fs/promises"
 import { questions } from "./lib/questions.js"
 import inquirer from "inquirer"
-// import { generateLogo } from "./lib/generateLogo.js"
+import { generateLogo } from "./lib/generateLogo.js"
 
 
 // initialize app
-function init (){
+function init(){
     inquirer.prompt(questions)
-    .then((answers) => {
+    .then((answers => {
         const logo = generateLogo(answers)
-        console.log(logo)
-        fs.writeFile("./logo.svg", logo, err => {
-            if(err){
-                throw err 
-            }
-            console.log("Logo successfully created!")
-            })
-        })
-    .catch((error) => {
-        console.log(error)
-    })
+        console.log("Logo created successfully!")
+        return writeFile("./examples/newLogo.svg", logo)
+    }))
+    .catch((error => {
+        console.log("Error occurred")
+    }))
 }
-
 init()
