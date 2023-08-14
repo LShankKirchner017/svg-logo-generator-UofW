@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "jest": {
+    "transform": {}
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,9 @@
   },
   "homepage": "https://github.com/LShankKirchner017/svg-logo-generator-UofW#readme",
   "dependencies": {
-    "inquirer": "^9.2.10",
+    "inquirer": "^9.2.10"
+  },
+  "devDependencies": {
     "jest": "^29.6.2"
   }
 }
