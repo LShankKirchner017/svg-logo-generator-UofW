@@ -23,6 +23,7 @@ During this challenge I learned quite a bit. I learned more about constructors a
 Lindsay Shank-Kirchner 
 
 # Walkthrough Video
+https://watch.screencastify.com/v/ABVpO92bmICZZPWQwFgV
 
 # Acknowledgements & Sources
 - Portions of the testing code & the debugging of the Jest issue were completed with help from Josh Naylor during Office Hours on Monday August 14th, 2023. 
